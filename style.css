@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header{
@@ -12,7 +13,45 @@
     position: relative;
 }
 
-#logo{
-    width: 270px;
-    height: 75px;
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(183, 38, 154);
+    text-decoration: none;
+    font-size: large;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(99, 168, 210);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
 }
