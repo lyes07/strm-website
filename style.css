@@ -73,6 +73,13 @@ nav img{
 .text-box h1{
     font-size: 62px;
 }
+.soon{
+    width: 50%;
+}
+.soon h1{
+    font-size: 46px;
+    margin-bottom: 10px;
+}
 
 .text-box p{
     margin: 10px 0 40px;
