@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cours Structure Machine</title>
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img id="logo" src="image/logo.png" alt="logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Cours</a></li>
@@ -24,8 +26,15 @@
                     <li><a href="">About</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
+        <div class="text-box">
+            <h1>Cours Structure Machine</h1>
+            <p>Lorem ipsum dolo adipisicing elit. Esse sed rerum, laborum, nisi doloremque quibusdam<br> praesentium repudiandae odio sequi ent. Esse, ex!</p>
+            <a href="" class="btn">More</a>
+        </div>
     </section>
     
+    <script src="script.js"></script>
 </body>
 </html>
