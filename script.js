@@ -1,11 +1,15 @@
 const navLinks = document.getElementById("navLinks");
+navLinks.style.display="none";
 
 function hidemenu(){
-    navLinks.style.right = "-55%";
+    navLinks.style.right = "-55%"; 
+    setTimeout(()=>{navLinks.style.display="none";},1000);
+    
 }
 
 function showmenu(){
-    navLinks.style.right = "0";
+    navLinks.style.display="";
+    setTimeout(()=>{navLinks.style.right = "0";},5); 
 }
 
 
