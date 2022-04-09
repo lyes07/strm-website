@@ -1,16 +1,35 @@
 const navLinks = document.getElementById("navLinks");
-navLinks.style.display="none";
+
+var mobileScrean = window.matchMedia("(max-width: 700px)");
+mobileScrean.addEventListener("change",e=>{
+    if(this.matches){
+        navLinks.style.display="none";
+    }
+})
+if(mobileScrean.matches){
+    navLinks.style.display="none";
+}
+
+
+var pcScrean = window.matchMedia("(min-width: 701px)").addEventListener("change",e=>{
+    if(this.matches){
+        navLinks.style.display="";
+    }
+})
+ 
 
 function hidemenu(){
-    navLinks.style.right = "-55%"; 
-    setTimeout(()=>{navLinks.style.display="none";},1000);
-    
+    //navLinks.style.right = "-55%"; 
+    navLinks.style.right = "-55%";
+    setTimeout(()=>{navLinks.style.display="none";},1000); 
 }
 
 function showmenu(){
+    //navLinks.style.right = "0";
     navLinks.style.display="";
     setTimeout(()=>{navLinks.style.right = "0";},5); 
 }
+
 
 
 const course1 = document.getElementById("c1");
