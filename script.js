@@ -29,19 +29,16 @@ function showmenu(){
 
 
 const course1 = document.getElementById("c1");
-course1.addEventListener("click",toCourse1);
-function toCourse1(){
+course1.addEventListener("click",e => {
     window.location.href = "course.html";
-}
+});
 
 const course2 = document.getElementById("c2");
-course2.addEventListener("click",toCourse2);
-function toCourse2(){
+course2.addEventListener("click",e => {
     window.location.href = "course.html";
-}
+});
 
 const course3 = document.getElementById("c3");
-course3.addEventListener("click",toCourse3);
-function toCourse3(){
+course3.addEventListener("click",e => {
     window.location.href = "course.html";
-}
+});

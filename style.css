@@ -8,19 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
-/* 
-::-webkit-scrollbar{
-    width: 3px;
-}
-::-webkit-scrollbar-track{
-    background: rgb(24, 12, 108);
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb{
-    background: rgb(183, 38, 154);
-    border-radius: 10px;
-}
- */
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -87,6 +75,7 @@ nav img{
     -webkit-backdrop-filter: blur(12px);
     border-radius: 25px;
 }
+
 .text-box h1{
     font-size: 62px;
     margin: 10px 10px;
@@ -197,12 +186,16 @@ main{
     width: 80%;
     text-align: center;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 70px;
     color: white;
 }
 h1{
     font-size: 36px;
     font-weight: 600;
+}
+
+.course h1{
+    margin-bottom: 20px;
 }
 
 p{
@@ -232,10 +225,6 @@ h3{
     font-weight: 600;
     font-style: bold;
     margin: 10px;
-}
-
-.course-col > h3{
-    
 }
 
 .course-col:hover{
@@ -295,4 +284,16 @@ hr{
     font-weight: 600;
 }
 
+/*      Course.html     */
 
+.courseNav{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.courseNav h1{
+    font-size: 62px;
+    margin: 10px 10px;
+}
