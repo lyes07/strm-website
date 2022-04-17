@@ -295,5 +295,18 @@ hr{
 
 .courseNav h1{
     font-size: 62px;
-    margin: 10px 10px;
+    margin: 10px 5px;
+}
+
+.gitLink:link, .gitLink:visited{
+    color: rgb(156, 38, 130);
+    text-decoration: none;
+}
+
+.course-col-nav{
+    padding: 8px 4px;
+}
+
+.course-row{
+    margin-top: 3%;
 }
