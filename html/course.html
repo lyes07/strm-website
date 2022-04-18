@@ -5,43 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/favicon.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script/course.js" defer="defer"></script>
     <title>Cours Structure Machine</title>
 </head>
 <body>
     <header class="header">
         <nav>
-            <a href="index.html"><img id="logo" src="image/logo.png" alt="logo"></a>
+            <a href="../index.html"><img id="logo" src="../image/logo.png" alt="logo"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="#">Course</a></li>
                     <li><a href="quiz.html">Quiz</a></li>
                     <li><a href="test.html">Test</a></li>
-                    <li><a href="index.html#footer">About</a></li>
+                    <li><a href="../index.html#footer">About</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
-        <!-- <div class="text-box soon">
-            <h1>Course Coming Soon</h1>
-            <a href="index.html" class="btn">Go Back</a>
-        </div> -->
         <div class="courseNav">
             <h1>Course</h1>
             <div class="row course-row">
-                <div class="course-col course-col-nav" id="c1">
+                <div class="course-col course-col-nav" id="cc1">
                     <h3>Introduction à l'informatique</h3>
                 </div>
-                <div class="course-col course-col-nav" id="c2">
+                <div class="course-col course-col-nav" id="cc2">
                     <h3>Codage et représentation de l'information</h3>
                 </div>
-                <div class="course-col course-col-nav" id="c3">
+                <div class="course-col course-col-nav" id="cc3">
                     <h3>Algèbre de Boole</h3>
                 </div>
             </div>
@@ -49,9 +46,15 @@
     </header>
 
     <main id="main">
-        
+        <div id="ch1" style="height: 1000px;">
+            <h1>Introduction à l'informatique</h1>
+        </div>
+        <div id="ch2" style="height: 1000px;">
+            <h1>Codage et représentation de l'information</h1>
+        </div>
+        <div id="ch3" style="height: 1000px;">
+            <h1>Algèbre de Boole</h1>
+        </div>
     </main>
-    
-    <script src="script.js"></script>
 </body>
 </html>

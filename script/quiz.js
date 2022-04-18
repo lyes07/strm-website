@@ -13,7 +13,6 @@ if(mobileScrean.matches){
     navLinks.style.display="none";
 }
 
-
 function hidemenu(){
     //navLinks.style.right = "-55%"; 
     navLinks.style.right = "-55%";
@@ -25,20 +24,3 @@ function showmenu(){
     navLinks.style.display="";
     setTimeout(()=>{navLinks.style.right = "0";},5); 
 }
-
-
-
-const course1 = document.getElementById("c1");
-course1.addEventListener("click",e => {
-    window.location.href = "course.html";
-});
-
-const course2 = document.getElementById("c2");
-course2.addEventListener("click",e => {
-    window.location.href = "course.html";
-});
-
-const course3 = document.getElementById("c3");
-course3.addEventListener("click",e => {
-    window.location.href = "course.html";
-});
