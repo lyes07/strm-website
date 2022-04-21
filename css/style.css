@@ -312,3 +312,21 @@ hr{
 .course-row{
     margin-top: 3%;
 }
+#main h1{
+    font-size: 40px;
+    margin: 0 10px;
+}
+u{
+    color: rgb(156, 38, 130);
+}
+
+@media(max-width: 700px){
+    .courseNav h1{
+        font-size: 28px;
+        margin: 20px 5px;
+    }
+    #main h1{
+        font-size: 22px;
+        margin: 0 8px;
+    }
+}
