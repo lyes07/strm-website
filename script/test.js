@@ -2,6 +2,7 @@ const navLinks = document.getElementById("navLinks");
 
 var mobileScrean = window.matchMedia("(max-width: 700px)");
 mobileScrean.addEventListener("change",e=>{
+    location.reload();
     if(this.matches){
         navLinks.style.display="none";
     }
