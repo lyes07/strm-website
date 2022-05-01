@@ -32,10 +32,8 @@
 }
 
 .container-course{
-    width: 80%;
+    width: 95%;
     margin: auto;
-    border: 4px rgb(156, 38, 130) solid;
-    border-radius: 10px;
 }
 
 .part{
@@ -64,6 +62,16 @@ table, th, td {
 }
 th, td {
     width: 50px;
+}
+
+.modal{
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+.modal::backdrop{
+    background: rgb(0 0 0 / .4);
 }
 
 @media(max-width: 700px){

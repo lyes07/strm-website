@@ -40,3 +40,31 @@ const cc3 = document.getElementById("cc3");
 cc3.addEventListener("click",e => {
     window.location.href = "#ch3";
 });
+
+const model = document.querySelector("#question1");
+const open = document.querySelector(".open-button");
+const close = document.querySelector(".close-button");
+
+open.addEventListener('click', ()=>{
+    model.showModal();
+    const q1r1 = document.getElementById("q1r1");
+    const q1r2 = document.getElementById("q1r2");
+    const q1r3 = document.getElementById("q1r3");
+    const q1r4 = document.getElementById("q1r4");
+
+    q1r1.addEventListener("click", ()=>{
+
+            if(this.value == "0"){
+                this.innerHTML = "<td>1</td>";
+            }
+            else{
+                this.innerHTML = "<td>0</td>";
+            }
+    });
+});
+
+close.addEventListener('click', ()=>{
+    model.close();
+});
+
+
