@@ -41,9 +41,21 @@ cc3.addEventListener("click",e => {
     window.location.href = "#ch3";
 });
 
+const conjonction = ["0","0","0","1"];
 const model = document.querySelector("#question1");
 const open = document.querySelector(".open-button");
 const close = document.querySelector(".close-button");
+const chech = document.querySelector(".check-button");
+
+chech.addEventListener("click",()=>{
+    if(q1r1.innerHTML==conjonction[0] && q1r2.innerHTML==conjonction[1] && q1r3.innerHTML==conjonction[2] && q1r4.innerHTML==conjonction[3]){
+        alert("You are right!! Congratulation");
+        model.close();
+    }
+    else{
+        alert("You are wrong!! Try aging!!");
+    }
+});
 
 open.addEventListener('click', ()=>{
     model.showModal();
@@ -53,12 +65,35 @@ open.addEventListener('click', ()=>{
     const q1r4 = document.getElementById("q1r4");
 
     q1r1.addEventListener("click", ()=>{
-
-            if(this.value == "0"){
-                this.innerHTML = "<td>1</td>";
+            if(q1r1.innerHTML == "0"){
+                q1r1.innerHTML = "1";
             }
             else{
-                this.innerHTML = "<td>0</td>";
+                q1r1.innerHTML = "0";
+            }
+    });
+    q1r2.addEventListener("click", ()=>{
+            if(q1r2.innerHTML == "0"){
+                q1r2.innerHTML = "1";
+            }
+            else{
+                q1r2.innerHTML = "0";
+            }
+    });
+    q1r3.addEventListener("click", ()=>{
+            if(q1r3.innerHTML == "0"){
+                q1r3.innerHTML = "1";
+            }
+            else{
+                q1r3.innerHTML = "0";
+            }
+    });
+    q1r4.addEventListener("click", ()=>{
+            if(q1r4.innerHTML == "0"){
+                q1r4.innerHTML = "1";
+            }
+            else{
+                q1r4.innerHTML = "0";
             }
     });
 });

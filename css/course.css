@@ -74,6 +74,12 @@ th, td {
     background: rgb(0 0 0 / .4);
 }
 
+#q1r1, #q1r2, #q1r3, #q1r4{
+    width: 100%;
+    background: none;
+    color: white;
+}
+
 @media(max-width: 700px){
     .courseNav h1{
         font-size: 28px;
