@@ -89,13 +89,11 @@
                     </div>
                     <div class="ar">
                         <h3>الوصل</h3>
-                        <p>نعرف الوصل بأن القضية "أ و ب" صحيحة إذا وفقط إذا كان أ صحيحا وب صحيحا، ونرمز له بالنقطة 
-                            «.» </p>
+                        <p>نعرف الوصل بأن القضية "أ و ب" صحيحة إذا وفقط إذا كان أ صحيحا وب صحيحا، ونرمز له بالنقطة «.» </p>
                     </div>
                 </div>
-
                 <div class="part center-part">
-                    <img src="..\image\and.png" alt="the AND operation image" id="and-img">
+                    <img src="..\image\and.png" alt="the AND operation image" class="course-img">
                     <table>
                         <thead>
                             <tr>
@@ -128,7 +126,7 @@
                         </tbody>
                     </table>
                 </div>
-                <button class="button open-button">Try</button>
+                <button class="button open-button1">Try</button>
                 <dialog  class="modal" id="question1">
                     <h2>Conjonction</h2>
                     <table>
@@ -140,40 +138,106 @@
                         <tr>
                             <td>0</td>
                             <td>0</td>
-                            <td><button id="q1r1">0</button></td>
+                            <td><button class="qr" id="q1r1">0</button></td>
                         </tr>
                         <tr>
                             <td>0</td>
                             <td>1</td>
-                            <td><button id="q1r2">0</button></td>
+                            <td><button class="qr" id="q1r2">0</button></td>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>0</td>
-                            <td><button id="q1r3">0</button></td>
+                            <td><button class="qr" id="q1r3">0</button></td>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>1</td>
-                            <td><button id="q1r4">0</button></td>
+                            <td><button class="qr" id="q1r4">0</button></td>
                         </tr>
                     </table>
-                    <button class="button close-button">Close</button>
-                    <button class="button check-button">Check</button>
+                    <button class="button close-button1">Close</button>
+                    <button class="button check-button1">Check</button>
                 </dialog>
                 <hr>
-                <div class="part part2">
+                <div class="part part4">
                     <div class="fr">
-                        <h3>Définitions</h3>
-                        <p>On appelle B l'ensemble constitué de deux éléments appelés valeurs de vérité $ {VRAI, FAUX} $. Cet ensemble est aussi noté $ B = {1, 0} $ \citep{didiermuler-2021}.
-                        Sur cet ensemble on peut définir deux lois (ou opérations ou foncteurs), les lois \textit{ET} et \textit{OU} et une transformation appelée complémentaire, inversion ou contraire \citep{didiermuler-2021}.</p>
+                        <h3>Disjonction</h3>
+                        <p>Elle est définie de la manière suivante : a OU b est VRAI si et seulement si a est VRAI ou b est VRAI. (En particulier, si a est vrai et que b est vrai aussi, alors a OU b est vrai.) Cette loi est aussi noté par un plus +</p>
                     </div>
                     <div class="ar">
-                        <h3>تعريفات</h3>
-                        <p>نسمي المجموعة \textLR{B} ذات العنصرين المسميين "قيمتا الحقيقة" (صح، خطأ). نرمز لهذه المجموعة $ B = \{1, 0\} $. 
-                        نعرّف على هذه المجموعة قانونين (عمليتين أو دالتين) هما الوصل "و"، والفصل "أو"، والتحويل المسمى المتمم (العكس، الضد).</p>
+                        <h3>الفصل</h3>
+                        <p>نعرف الفصل بأن القضية "أ أو ب" صحيحة إذا وفقط إذا كان أ صحيحا أوكان ب صحيحا، ونرمز له بالزائد «+»</p>
                     </div>
                 </div>
+                <div class="part center-part">
+                    <img src="..\image\or.png" alt="the OR operation image" class="course-img">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>a ou b</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="button open-button2">Try</button>
+                <dialog  class="modal" id="question2">
+                    <h2>Disjonction</h2>
+                    <table>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>a ou b</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td><button class="qr" id="q2r1">0</button></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td><button class="qr" id="q2r2">0</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td><button class="qr" id="q2r3">0</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td><button class="qr" id="q2r4">0</button></td>
+                        </tr>
+                    </table>
+                    <button class="button close-button2">Close</button>
+                    <button class="button check-button2">Check</button>
+                </dialog>
+                <hr>
 
                 <div style="height: 100px;"></div>
                 
