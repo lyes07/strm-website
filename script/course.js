@@ -41,6 +41,8 @@ cc3.addEventListener("click",e => {
     window.location.href = "#ch3";
 });
 
+////////// conjonction /////////
+
 const conjonction = ["0","0","0","1"];
 const model = document.querySelector("#question1");
 const open = document.querySelector(".open-button");
@@ -101,5 +103,9 @@ open.addEventListener('click', ()=>{
 close.addEventListener('click', ()=>{
     model.close();
 });
+
+
+////////// conjonction /////////
+
 
 
