@@ -67,11 +67,11 @@ th, td {
 .modal{
     width: 80%;
     margin: auto;
-    background-color: black;
+    background-color: #0c1133;
     color: white;
 }
 .modal::backdrop{
-    background: rgb(0 0 0 / .4);
+    background: rgb(0 0 0 / .75);
 }
 
 .qr{
