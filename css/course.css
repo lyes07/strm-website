@@ -2,16 +2,45 @@
 
 /*      Course.html     */
 
-.courseNav{
-    width: 80%;
-    text-align: center;
+.course-nav{
+    width: 95%;
     margin: auto;
+    text-align: center;
     color: white;
 }
-
-.courseNav h1{
+.course-nav h1{
     font-size: 62px;
-    margin: 10px 5px;
+    margin: 5px;
+    /* background: -webkit-linear-gradient( rgb(215, 83, 186), #0d27cf);
+    background: rgb(72,10,113);
+    background: linear-gradient(344deg, rgba(72,10,113,1) 0%, rgba(147,28,140,1) 56%, rgba(34,139,179,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.chapters-nav{
+    padding: 1%;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.chapter-parts{
+    width: 33%;
+}
+.chapter-parts > h3{
+    text-align: left;
+}
+.chapter-parts > ul{
+    margin-left: 20px;
+    list-style: none;
+    text-align: left;
+    line-height: 1.5;
+}
+.chapter-parts > h3:hover{
+    cursor: pointer;
+    font-style: italic;
 }
 
 .gitLink:link, .gitLink:visited{
@@ -19,13 +48,6 @@
     text-decoration: none;
 }
 
-.course-col-nav{
-    padding: 8px 4px;
-}
-
-.course-row{
-    margin-top: 3%;
-}
 #main h1{
     font-size: 40px;
     margin: 0 10px;
@@ -86,9 +108,15 @@ th, td {
 }
 
 @media(max-width: 700px){
-    .courseNav h1{
-        font-size: 28px;
+    .course-nav h1{
+        font-size: 34px;
         margin: 20px 5px;
+    }
+    .chapters-nav{
+        flex-direction: column;
+    }
+    .chapter-parts{
+        width: 100%;
     }
     #main h1{
         font-size: 22px;

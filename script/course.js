@@ -1,4 +1,7 @@
 const navLinks = document.getElementById("navLinks");
+const chPt1 = document.getElementById("chPt1");
+const chPt2 = document.getElementById("chPt2");
+const chPt3 = document.getElementById("chPt3");
 
 var mobileScrean = window.matchMedia("(max-width: 700px)");
 mobileScrean.addEventListener("change",e=>{
@@ -12,6 +15,9 @@ mobileScrean.addEventListener("change",e=>{
 })
 if(mobileScrean.matches){
     navLinks.style.display="none";
+    chPt1.style.display="none";
+    chPt2.style.display="none";
+    chPt3.style.display="none";
 }
 
 function hidemenu(){
