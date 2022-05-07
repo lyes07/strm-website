@@ -31,6 +31,8 @@
 }
 .chapter-parts > h3{
     text-align: left;
+    transition:color .5s;
+
 }
 .chapter-parts > ul{
     margin-left: 20px;
@@ -40,7 +42,7 @@
 }
 .chapter-parts > h3:hover{
     cursor: pointer;
-    font-style: italic;
+    color: rgb(180, 77, 157);
 }
 
 .gitLink:link, .gitLink:visited{
@@ -117,6 +119,12 @@ th, td {
     }
     .chapter-parts{
         width: 100%;
+    }
+    .chapter-parts > ul{
+        display: none;
+    }
+    .chapter-parts:hover ul{
+        display: block;
     }
     #main h1{
         font-size: 22px;
