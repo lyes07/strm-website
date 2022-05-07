@@ -11,12 +11,11 @@
 .course-nav h1{
     font-size: 62px;
     margin: 5px;
-    /* background: -webkit-linear-gradient( rgb(215, 83, 186), #0d27cf);
-    background: rgb(72,10,113);
-    background: linear-gradient(344deg, rgba(72,10,113,1) 0%, rgba(147,28,140,1) 56%, rgba(34,139,179,1) 100%);
+    background: rgb(159,42,236);
+    background: linear-gradient(344deg, rgba(159,42,236,1) 0%, rgba(179,34,123,1) 51%, rgba(223,25,211,1) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent; 
 }
 
 .chapters-nav{
@@ -31,12 +30,13 @@
 }
 .chapter-parts > h3{
     text-align: left;
+    margin-left: 10%;
+    padding: 10px;
     transition:color .5s;
-
 }
 .chapter-parts > ul{
-    margin-left: 20px;
-    list-style: none;
+    margin-left: 20%;
+    list-style:decimal;
     text-align: left;
     line-height: 1.5;
 }
@@ -50,6 +50,15 @@
     text-decoration: none;
 }
 
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+.chapter-parts a:hover{
+    color: rgb(180, 77, 157);
+}
+
+
 #main h1{
     font-size: 40px;
     margin: 0 10px;
@@ -58,6 +67,14 @@
 .container-course{
     width: 95%;
     margin: auto;
+}
+
+.ch > h1{
+    background: rgb(159,42,236);
+    background: linear-gradient(344deg, rgba(159,42,236,1) 0%, rgba(179,34,123,1) 51%, rgba(223,25,211,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 .part{
