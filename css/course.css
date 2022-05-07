@@ -32,7 +32,8 @@
     text-align: left;
     margin-left: 10%;
     padding: 10px;
-    transition:color .5s;
+    transition:color .3s;
+    transition:font-size .3s;
 }
 .chapter-parts > ul{
     margin-left: 20%;
@@ -41,6 +42,7 @@
     line-height: 1.5;
 }
 .chapter-parts > h3:hover{
+    font-size: 20px;
     cursor: pointer;
     color: rgb(180, 77, 157);
 }
@@ -54,7 +56,11 @@ a:link, a:visited{
     color: white;
     text-decoration: none;
 }
+.chapter-parts a{
+    transition:font-size .3s;
+}
 .chapter-parts a:hover{
+    font-size: 18px;
     color: rgb(180, 77, 157);
 }
 
@@ -87,6 +93,12 @@ a:link, a:visited{
 }
 .fr, .ar{
     width: 48%;
+}
+.fr>h3{
+    text-align: left;
+}
+.ar>h3{
+    text-align: right;
 }
 .ar{
     text-align: right;
