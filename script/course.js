@@ -174,3 +174,48 @@ close2.addEventListener('click', ()=>{
     model2.close();
 });
 
+
+//////// negation /////
+
+const negation = ["1","0"];
+const model3 = document.querySelector("#question3");
+const open3 = document.querySelector(".open-button3");
+const close3 = document.querySelector(".close-button3");
+const check3 = document.querySelector(".check-button3");
+
+check3.addEventListener("click",()=>{
+    if(q3r1.innerHTML==negation[0] && q3r2.innerHTML==negation[1]){
+        alert("You are right!! Congratulation");
+        model3.close();
+    }
+    else{
+        alert("You are wrong!! Try aging!!");
+    }
+});
+
+open3.addEventListener('click', ()=>{
+    model3.showModal();
+    const q2r1 = document.getElementById("q3r1");
+    const q2r2 = document.getElementById("q3r2");
+
+    q3r1.addEventListener("click", ()=>{
+            if(q3r1.innerHTML == "0"){
+                q3r1.innerHTML = "1";
+            }
+            else{
+                q3r1.innerHTML = "0";
+            }
+    });
+    q3r2.addEventListener("click", ()=>{
+            if(q3r2.innerHTML == "0"){
+                q3r2.innerHTML = "1";
+            }
+            else{
+                q3r2.innerHTML = "0";
+            }
+    });
+});
+
+close3.addEventListener('click', ()=>{
+    model3.close();
+});

@@ -91,6 +91,10 @@ a:link, a:visited{
     flex-direction: row;
     justify-content: space-between;
 }
+.supPart{
+    margin: auto;
+    width: 90%;
+}
 .fr, .ar{
     width: 48%;
 }
@@ -114,7 +118,8 @@ table, th, td {
     border-collapse: collapse ;
 }
 th, td {
-    width: 50px;
+    padding: 5px 12px;
+    text-align: center;
 }
 
 .modal{
@@ -136,6 +141,25 @@ th, td {
 .center-part{
     justify-content: center;
     gap: 10%;
+}
+
+.button{
+    padding: 5px 12px;
+}
+td>button{
+    width: 100%;
+    height: 100%;
+}
+
+.bigLine{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.midLine{
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 @media(max-width: 700px){
