@@ -1,7 +1,11 @@
 @import url("style.css");
 
 /*      Course.html     */
-
+p{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.5;
+}
 .course-nav{
     width: 95%;
     margin: auto;
