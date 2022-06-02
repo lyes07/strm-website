@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 .ar *{
     font-family: 'Tajawal', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
  .ar>h3{
+    font-weight: 700;
+}
+b{
     font-weight: 700;
 }
 
@@ -33,6 +36,11 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    background-color: #080c26;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 5;
 }
 
 nav img{

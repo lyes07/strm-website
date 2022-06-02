@@ -2,12 +2,13 @@
 
 /*      Course.html     */
 p{
-    font-weight: 400;
-    font-size: 19px;
+    font-weight: 300;
+    font-size: 18px;
     line-height: 1.5;
 }
 .course-nav{
     width: 95%;
+    padding-top: 100px;
     margin: auto;
     text-align: center;
     color: white;
@@ -47,6 +48,7 @@ p{
 }
 .chapter-parts > h3:hover{
     font-size: 20px;
+    /* transform: scale(1.5); */
     cursor: pointer;
     color: rgb(180, 77, 157);
 }
