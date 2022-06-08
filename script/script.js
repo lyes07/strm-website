@@ -1,4 +1,6 @@
 const navLinks = document.getElementById("navLinks");
+const navHeight = document.querySelector("#nav").offsetHeight;
+document.documentElement.style.setProperty("--scroll-padding",navHeight-1+"px");
 
 var mobileScrean = window.matchMedia("(max-width: 700px)");
 mobileScrean.addEventListener("change",e=>{

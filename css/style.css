@@ -20,7 +20,7 @@ h1{
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: var(--scroll-padding, 100px);
 }
 
 .header{
