@@ -17,7 +17,7 @@ if(mobileScrean.matches){
 function hidemenu(){
     //navLinks.style.right = "-55%"; 
     navLinks.style.right = "-55%";
-    setTimeout(()=>{navLinks.style.display="none";},1000); 
+    setTimeout(()=>{navLinks.style.display="none";},500); 
 }
 
 function showmenu(){
