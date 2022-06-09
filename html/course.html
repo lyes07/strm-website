@@ -194,11 +194,322 @@
                 <h1>Codage et représentation de l'information :</h1>
                 <div class="part" id="c2p1">
                     <div class="fr">
+                        <h3>Introduction</h3>
+                        <p>Le codage d’une information consiste à établir une correspondance entre la représentation
+                            externe (habituelle) de l’information (le nombre 65 ou le caractère « A » par
+                           exemple) et sa représentation interne dans la machine (une suite de bits).</p>
+                    </div>
+                    <div class="ar">
+                        <h3>مقدمة</h3>
+                        <p>الترميز هو الربط بين التمثيل الخارجي المعتاد للمعلومة (مثلا العدد 65 أو الحرف A (وتمثيله الداخلي في الجهاز (سلسلة من الأرقام الثنائية)</p>
+                    </div>
+                </div>
+                <div class="part center-part">
+                    <img src="..\image\convertAlph.jpg" alt="codage du la châine de caractères Ada b" class="course-img" >
+                </div>
+                <hr class="bigLine">
+                <div class="part" id="c2p1">
+                    <div class="fr">
                         <h3>1. Les systèmes de numération</h3>
                     </div>
                     <div class="ar">
                         <h3>أنظمة التعداد</h3>
                     </div>
+                </div>
+                <div class="part part3 supPart">
+                    <div class="fr">
+                        <h3>1.1. Codage des entiers naturels</h3>
+                        <h4>1.1.1. Les systèmes de numération</h4>
+                        <p>Principe d’une base</p>
+                        <ul>
+                            <li>La base est le nombre qui sert à définir un système de numération.</li>
+                            <li>La base du système décimal est dix alors que celle du système octal est huit.</li>
+                            <li>Quelle que soit la base numérique employée, elle suit la relation suivante :</li>
+                        </ul>
+                    </div>
+                    <div class="ar">
+                        <h3>ترميز الاعداد الطبيعية</h3>
+                        <h4>أنظمة التعداد</h4>
+                        <p>مبدأ الاساس</p>
+                        <ul dir="rtl">
+                            <li>الأساس هو العدد الذي يعر ّف نظاما للتعداد</li>
+                            <li> أساس النظام العشري هي العشرة، وأساس النظام الثماني هو 8</li>
+                            <li> مهما يكن الأساس المستعمل فإنه يتبع العلاقة الآتية</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="part center-part">
+                    ∑n
+                    i=0
+                    (bia
+                    i
+                    ) = b0a
+                    0 + b1a
+                    1 + b2a
+                    2 + · · · + bn−1a
+                    n−1 + bna
+                    n
+                </div>
+                
+                <div class="part part3 supPart">
+                    <div class="fr">
+                        <p>Le système décimal est un système de numération utilisant la base dix. Dans ce système, 
+                        les puissances de dix et leurs multiples bénéficient d’une représentation privilégiée.</p>
+                    </div>
+                    <div class="ar">
+                        <p>النظام العشري هو النظام المعتاد لدى الإنسان، حيث يضع ف كل منزلة قوى العدد عشرة، ويمكن تمثيله بكثير حدود حيث 10 = X</p>
+                    </div>
+                </div>
+                <div class="part center-part">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>10 <sup>3</sup></td>
+                                <td>10 <sup>2</sup></td>
+                                <td>10 <sup>1</sup></td>
+                                <td>10 <sup>0</sup></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>9</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+                <div class="part part3 supPart">
+                    <div class="fr">
+                        <p>Le système binaire est un système de numération utilisant la base 2.
+                             On nomme couramment bit (de l’anglais binary digit, soit « chiffre binaire »)
+                              les chiffres de la numération binaire positionnelle. 
+                            Ceux-ci ne peuvent prendre que deux valeurs, notées par convention 0 et 1</p>
+                    </div>
+                    <div class="ar">
+                        <p>النظام الثنائي : يعتمد على رقمين هما الواحد والصفر لتمثيل أي عدد، ويستعمل في الحواسيب</p>
+                    </div>
+                </div>
+                <div class="part part3 supPart">
+                    <div class="fr">
+                        <p>Le système hexadécimal est un système de numération positionnel en base. Il utilise
+                            ainsi 16 symboles, en général les chiffres arabes pour les dix premiers chiffres et les lettres A à F
+                            pour les six suivants.</p>
+                    </div>
+                    <div class="ar">
+                        <p>لنظام الستعشري أساسه16 ويستعمل كنظام عملي مبسط للنظام الثنائي، يسمح باختصار الترميز الثنائي وتسهيل حفظه وكتابته وسهولة التحو يل
+                            بينه وبين الثنائي،</p>
+                    </div>
+                </div>
+                <div class="part part3 supPart">
+                    <div class="fr">
+                        <h3>1.2. Conversion entre les systèmes</h3>
+                    </div>
+                    <div class="ar">
+                        <h3>التحويل بين أنظمة التعداد</h3>
+                    </div>
+                </div>
+                <div class="part center-part">
+                    <table style="margin: 0;  padding:0;">
+                        <thead>
+                            <tr>
+                                <td>Cnv</td>
+                                <td>Méthode</td>
+                                <td>Exemple</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10 => X</td>
+                                <td>Division successive sur X<br>القسمة الإقليدية المتتالية على العدد، حتى يصبح<br>
+                                    الحاصل 0 ،ثم أخذ البواقي من اليمين إلى اليسار</td>
+                                <td>(44)<sub>10</sub> = (101100)<sub>2</sub></td>
+                            </tr>
+                            <tr>
+                                <td>X => 10 </td>
+                                <td>Développement polynomial<br>x نشر كثير حدود بالضرب في قوى الأساس </td>
+                                <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>5<sup>2</sup></td>
+                                                <td>5<sup>1</sup></td>
+                                                <td>5<sup>0</sup></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    (210) <sub>5</sub> = 0×5<sup>0</sup>+1×5<sup>1</sup>+2×5<sup>2</sup>
+                                    <br>
+                                    (210) <sub>5</sub> = 0 + 5 + 25×2 = (55)<sub>10</sub>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>X => Y</td>
+                                <td>Passer par la base 10<br>المرور بالأساس 10</td>
+                                <td>(210)<sub>5</sub> = (55)<sub>10</sub> = (67)<sub>8</sub> </td>
+                            </tr>
+                            <tr>
+                                <td>2 => 8</td>
+                                <td>3 chiffres binaires => un chiffre octal<br>كل ثلاثة أرقام ثنائية يقابلها رقم ثماني</td>
+                                <td>
+                                    Binaire (101 110 011)<sub>2</sub>
+                                    <br>Octal (5 6 3)<sub>8</sub>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8 => 2</td>
+                                <td>un chiffre octal => 3 chiffres binaires<br>كل رقم ثماني يقابل ثلاثة أرقام ثنائية</td>
+                                <td>
+                                    Octal (5 6 3)<sub>8</sub>
+                                    <br>Binaire (101 110 011)<sub>2</sub>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2 => 16</td>
+                                <td>4 chiffres binaires => un chiffre octal<br>كل أربعة أرقام ثنائية تقابل رقما ستعشر يا</td>
+                                <td>
+                                    Binaire (101 110 011)<sub>2</sub>
+                                    <br>Hexa (A 6 3)<sub>8</sub>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>16 => 2</td>
+                                <td>un chiffre hexadécimal => 4 chiffres
+                                    binaires<br>كل رقم ستعشري يقابل أربعة أرقام ثنائية</td>
+                                <td>
+                                    Hexa (A 6 3)<sub>8</sub>
+                                    <br>Binaire (101 110 011)<sub>2</sub>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>   
+                </div>
+                
+                //////////////////////////////////
+                <div class="part part1" id="c2p2">
+                    <div class="fr">
+                        <h3>2. Arithmétique en binaire </h3>
+                    </div>
+                    <div class="ar">
+                        <h3>الحساب في النظام الثنائي</h3>
+                    </div>
+                </div>
+                
+                <div class="part center-part">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Addition<br>الجمع</td>
+                                <td>Multiplication<br>الضرب</td>
+                                <td>Division<br>القسمة</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1111<br>+1<hr>10 000</td>
+                                <td>111 011<br>*1 101<hr>111 011<br>11 101 100<br>111 011 000<hr>1 011 111 111</td>
+                                <td>10 111 011 | 101<hr>011 0 |100 101<br>111|<br>10|</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+                //////////////////////////////////
+                <div class="part part1" id="c2p3">
+                    <div class="fr">
+                        <h3>3. Représentation des entiers négatifs</h3>
+                    </div>
+                    <div class="ar">
+                        <h3>تمثيل الاعداد الصحيحة السالبة</h3>
+                        
+                    </div>
+                </div>
+                <div class="part part3 supPart">
+                    <div class="fr">
+                        <h3>3.1. Valeur signée</h3>
+                    </div>
+                    <div class="ar">
+                        <h3>القيمة ذات الاشارة</h3>
+                    </div>
+                </div>
+                <div class="part center-part">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Décimal<br>العشري</td>
+                                <td>Signe<br>الإشارة</td>
+                                <td>Valeur<br>القيمة</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>13<br>-13</td>
+                                <td>0<br>1</td>
+                                <td>1101<br>1101</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+                <div class="part part3 supPart">
+                    <div class="fr">
+                        <h3>3.2. Complément à 1</h3>
+                        <p>Inverser tous les bits</p>
+                    </div>
+                    <div class="ar">
+                        <h3 style="direction: rtl;">المتمم إلى الواحد:</h3>
+                        <p>أقلب كل البتات</p>
+                    </div>
+                </div>
+                <div class="part center-part">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Décimal<br>العشري</td>
+                                <td>Valeur<br>القيمة</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>13<br>-13</td>
+                                <td>0000 1101<br>1111 0010</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+                <div class="part part3 supPart">
+                    <div class="fr">
+                        <h3>3.3. Complément à 2</h3>
+                        <p>inverser tous les bits et ajouter 1</p>
+                    </div>
+                    <div class="ar">
+                        <h3  style="direction: rtl;">المتمم إلى اثنين:</h3>
+                        <p> اقلب كل البتات ثم أضف واحد</p>
+                    </div>
+                </div>
+                <div class="part center-part">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Décimal<br>العشري</td>
+                                <td>Valeur<br>القيمة</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>13<br>-13</td>
+                                <td>0000 1101<br>1111 0010<br>+1<br>= 1111 0011</td>
+                            </tr>
+                        </tbody>
+                    </table>   
                 </div>
 
                 <hr class="bigLine">

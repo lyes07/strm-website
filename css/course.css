@@ -128,6 +128,10 @@ th, td {
     text-align: center;
 }
 
+.course-img{
+    width: 40%;
+}
+
 .modal{
     width: 80%;
     margin: auto;
@@ -197,6 +201,9 @@ td>button{
     #main h1{
         font-size: 22px;
         margin: 0 8px;
+    }
+    .course-img{
+        width: 85%;
     }
     .container-course{
         width: 90%;
