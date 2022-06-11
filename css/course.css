@@ -124,7 +124,7 @@ table, th, td {
     border-collapse: collapse ;
 }
 th, td {
-    padding: 5px 12px;
+    padding: 8px 12px;
     text-align: center;
 }
 
@@ -153,6 +153,7 @@ th, td {
     gap: 10%;
 }
 
+
 .button{
     padding: 5px 12px;
     margin-left: 30%;
@@ -163,7 +164,18 @@ td>button{
     width: 100%;
     height: 100%;
 }
+.high-line{
+    border-top: 1px solid;
+    display: inline-block;
+    padding-top: 3px;
+}
 
+bar{
+    text-decoration:overline;
+}
+double-bar {
+    border-top: 4px double;
+}
 .bigLine{
     width: 92%;
     margin-left: 4%;
@@ -180,6 +192,7 @@ td>button{
     margin-left: 30%;
     margin-right: 30%;
 }
+
 
 @media(max-width: 700px){
     .course-nav h1{
