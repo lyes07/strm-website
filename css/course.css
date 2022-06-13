@@ -114,6 +114,21 @@ a:link, a:visited{
     text-align: right;
 }
 
+.part > .fr >h3{
+    color:#f51aa4 ;
+}
+.part > .ar >h3{
+    color:#f51aa4 ;
+}
+
+.supPart > .fr >h3{
+    color:#bd4089 ;
+}
+.supPart > .ar >h3{
+    color:#bd4089 ;
+}
+
+
 hr {
     margin-top: 20px;
     margin-bottom: 20px;
