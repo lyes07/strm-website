@@ -29,11 +29,16 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 25px;
 }
 .chapter-parts{
     width: 33%;
 }
 .chapter-parts > h3{
+    font-size: 20px;
     text-align: left;
     margin-left: 10%;
     padding: 10px;
@@ -47,10 +52,10 @@ p{
     line-height: 1.5;
 }
 .chapter-parts > h3:hover{
-    font-size: 20px;
+    font-size: 22px;
     /* transform: scale(1.5); */
     cursor: pointer;
-    color: rgb(180, 77, 157);
+    color: #f51aa4 ;
 }
 
 .gitLink:link, .gitLink:visited{
@@ -59,15 +64,16 @@ p{
 }
 
 a:link, a:visited{
+    font-size: 17px;
     color: white;
     text-decoration: none;
 }
 .chapter-parts a{
-    transition:font-size .3s;
+    transition:font-size  .3s;
 }
 .chapter-parts a:hover{
-    font-size: 18px;
-    color: rgb(180, 77, 157);
+    font-size: 19px;
+    color: #f51aa4 ;
 }
 
 
@@ -115,9 +121,11 @@ a:link, a:visited{
 }
 
 .part > .fr >h3{
+    font-size: 24px;
     color:#f51aa4 ;
 }
 .part > .ar >h3{
+    font-size: 24px;
     color:#f51aa4 ;
 }
 
@@ -143,6 +151,9 @@ th, td {
     padding: 8px 12px;
     text-align: center;
 }
+td{
+    padding: 8px 18px;
+}
 
 .course-img{
     width: 40%;
@@ -150,9 +161,30 @@ th, td {
 
 .modal{
     width: 80%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
     margin: auto;
+    padding: 1.5rem;
     background-color: #0c1133;
     color: white;
+}
+.modal table, 
+.modal th,
+.modal td {
+    color: white;
+    border: 2px solid white;
+    border-collapse: collapse ;
+} 
+.modal table{
+    margin: auto;
+}
+.modal-part{
+    color: white;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .modal::backdrop{
     background: rgb(0 0 0 / .75);
@@ -160,8 +192,13 @@ th, td {
 
 .qr{
     width: 100%;
+    font-size: 18px;
+    font-weight: 400;
     background: none;
     color: white;
+}
+.qr:hover{
+    cursor: pointer;
 }
 
 .center-part{
@@ -209,6 +246,25 @@ double-bar {
     margin-right: 30%;
 }
 
+.try-button{
+    color: white;
+    font-size: 18px;
+    padding: 8px 18px;
+    background: none;
+    border: 2px solid rgb(180, 77, 157);
+    border-radius: 5px;
+    margin-left: 46%;
+    margin-right: 46%;
+    transition: background-color .3s;
+}
+.try-button:hover{
+    cursor: pointer;
+    background-color: rgb(180, 77, 157);
+}
+
+.small-img{
+    width: 30%;
+}
 
 @media(max-width: 700px){
     .course-nav h1{
@@ -258,6 +314,15 @@ double-bar {
     .button{
         padding: 5px 12px;
         margin-left: 10%;
+    }
+
+    .part > .fr >h3,
+    .part > .ar >h3{
+        font-size: 20px;
+    }
+
+    .modal-part{
+        flex-direction: column;
     }
     
 }

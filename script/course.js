@@ -1,6 +1,5 @@
 const navLinks = document.getElementById("navLinks");
 
-
 var mobileScrean = window.matchMedia("(max-width: 700px)");
 mobileScrean.addEventListener("change",e=>{
     location.reload();
@@ -113,11 +112,12 @@ const model2 = document.querySelector("#question2");
 const open2 = document.querySelector(".open-button2");
 const close2 = document.querySelector(".close-button2");
 const check2 = document.querySelector(".check-button2");
+const feedback = document.querySelector(".feedback2");
 
 check2.addEventListener("click",()=>{
     if(q2r1.innerHTML==disjonction[0] && q2r2.innerHTML==disjonction[1] && q2r3.innerHTML==disjonction[2] && q2r4.innerHTML==disjonction[3]){
-        alert("You are right!! Congratulation");
-        model2.close();
+        feedback.innerHTML = "<h2>You are right!! Congratulation</h2>";
+        setTimeout(()=>{model2.close();},3000);
     }
     else{
         alert("You are wrong!! Try aging!!");
