@@ -371,89 +371,98 @@
                         <h3>التحويل بين أنظمة التعداد</h3>
                     </div>
                 </div>
+                <div class="panel panel-default">
+                    <div class="center-block fix-width scroll-inner">
+                        <table class="table table-striped">
+
                 <div class="part center-part">
-                    <table style="margin: 0;  padding:0;">
-                        <thead>
-                            <tr>
-                                <td>Cnv</td>
-                                <td>Méthode</td>
-                                <td>Exemple</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>10 => X</td>
-                                <td>Division successive sur X<br>القسمة الإقليدية المتتالية على العدد، حتى يصبح<br>
-                                    الحاصل 0 ،ثم أخذ البواقي من اليمين إلى اليسار</td>
-                                <td>(44)<sub>10</sub> = (101100)<sub>2</sub></td>
-                            </tr>
-                            <tr>
-                                <td>X => 10 </td>
-                                <td>Développement polynomial<br>x نشر كثير حدود بالضرب في قوى الأساس </td>
-                                <td>
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <td>5<sup>2</sup></td>
-                                                <td>5<sup>1</sup></td>
-                                                <td>5<sup>0</sup></td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <br>
-                                    (210) <sub>5</sub> = 0×5<sup>0</sup>+1×5<sup>1</sup>+2×5<sup>2</sup>
-                                    <br>
-                                    (210) <sub>5</sub> = 0 + 5 + 25×2 = (55)<sub>10</sub>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>X => Y</td>
-                                <td>Passer par la base 10<br>المرور بالأساس 10</td>
-                                <td>(210)<sub>5</sub> = (55)<sub>10</sub> = (67)<sub>8</sub> </td>
-                            </tr>
-                            <tr>
-                                <td>2 => 8</td>
-                                <td>3 chiffres binaires => un chiffre octal<br>كل ثلاثة أرقام ثنائية يقابلها رقم ثماني</td>
-                                <td>
-                                    Binaire (101 110 011)<sub>2</sub>
-                                    <br>Octal (5 6 3)<sub>8</sub>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8 => 2</td>
-                                <td>un chiffre octal => 3 chiffres binaires<br>كل رقم ثماني يقابل ثلاثة أرقام ثنائية</td>
-                                <td>
-                                    Octal (5 6 3)<sub>8</sub>
-                                    <br>Binaire (101 110 011)<sub>2</sub>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2 => 16</td>
-                                <td>4 chiffres binaires => un chiffre octal<br>كل أربعة أرقام ثنائية تقابل رقما ستعشر يا</td>
-                                <td>
-                                    Binaire (101 110 011)<sub>2</sub>
-                                    <br>Hexa (A 6 3)<sub>8</sub>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>16 => 2</td>
-                                <td>un chiffre hexadécimal => 4 chiffres
-                                    binaires<br>كل رقم ستعشري يقابل أربعة أرقام ثنائية</td>
-                                <td>
-                                    Hexa (A 6 3)<sub>8</sub>
-                                    <br>Binaire (101 110 011)<sub>2</sub>
-                                </td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>   
+                    <div class="panel panel-default">
+                        <div class="center-block fix-width scroll-inner">
+                            <table class="table table-striped" style="margin: 0;  padding:0;">
+                                <thead>
+                                    <tr>
+                                        <td>Cnv</td>
+                                        <td>Méthode</td>
+                                        <td>Exemple</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10 => X</td>
+                                        <td>Division successive sur X<br>القسمة الإقليدية المتتالية على العدد، حتى يصبح<br>
+                                            الحاصل 0 ،ثم أخذ البواقي من اليمين إلى اليسار</td>
+                                        <td>(44)<sub>10</sub> = (101100)<sub>2</sub></td>
+                                    </tr>
+                                    <tr>
+                                        <td>X => 10 </td>
+                                        <td>Développement polynomial<br>x نشر كثير حدود بالضرب في قوى الأساس </td>
+                                        <td>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <td>5<sup>2</sup></td>
+                                                        <td>5<sup>1</sup></td>
+                                                        <td>5<sup>0</sup></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>1</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <br>
+                                            (210) <sub>5</sub> = 0×5<sup>0</sup>+1×5<sup>1</sup>+2×5<sup>2</sup>
+                                            <br>
+                                            (210) <sub>5</sub> = 0 + 5 + 25×2 = (55)<sub>10</sub>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>X => Y</td>
+                                        <td>Passer par la base 10<br>المرور بالأساس 10</td>
+                                        <td>(210)<sub>5</sub> = (55)<sub>10</sub> = (67)<sub>8</sub> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 => 8</td>
+                                        <td>3 chiffres binaires => un chiffre octal<br>كل ثلاثة أرقام ثنائية يقابلها رقم ثماني</td>
+                                        <td>
+                                            Binaire (101 110 011)<sub>2</sub>
+                                            <br>Octal (5 6 3)<sub>8</sub>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8 => 2</td>
+                                        <td>un chiffre octal => 3 chiffres binaires<br>كل رقم ثماني يقابل ثلاثة أرقام ثنائية</td>
+                                        <td>
+                                            Octal (5 6 3)<sub>8</sub>
+                                            <br>Binaire (101 110 011)<sub>2</sub>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 => 16</td>
+                                        <td>4 chiffres binaires => un chiffre octal<br>كل أربعة أرقام ثنائية تقابل رقما ستعشر يا</td>
+                                        <td>
+                                            Binaire (101 110 011)<sub>2</sub>
+                                            <br>Hexa (A 6 3)<sub>8</sub>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16 => 2</td>
+                                        <td>un chiffre hexadécimal => 4 chiffres
+                                            binaires<br>كل رقم ستعشري يقابل أربعة أرقام ثنائية</td>
+                                        <td>
+                                            Hexa (A 6 3)<sub>8</sub>
+                                            <br>Binaire (101 110 011)<sub>2</sub>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>  
+                        </div>
+                    </div>
+
                 </div>
 
                 <hr class="midLine">
@@ -772,7 +781,7 @@
 
 
 
-            <hr class="bigLine" style="width: 100%; margin-left:1%;">
+            <hr class="bigLine" style="width: 98%; margin-left:1%;">
 
             <div class="ch" id="ch3">
                 <h1>Algèbre de Boole :</h1>
@@ -1168,41 +1177,45 @@
                     </div>
                 </div>
                 <div class="part center-part">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>A</td>
-                                <td>B</td>
-                                <td>C</td>
-                                <td>Solution</td>
-                                <td>term</td>
-                                <td>Min max</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>0<br>0<br>0<br>0</td>
-                                <td>0<br>0<br>1<br>1</td>
-                                <td>0<br>1<br>0<br>1</td>
-                                <td>0<br>0<br>0<br>1</td>
-                                <td>A + B + C<br>A + B + <bar>C</bar><br>
-                                A + <bar>B</bar> + C<br><bar>A</bar>BC</td>
-                                <td>Max term<br>Max term<br>Max term<br>Min term</td>
-                            </tr>
-                            <tr>
-                                <td>1<br>1<br>1<br>1</td>
-                                <td>0<br>0<br>1<br>1</td>
-                                <td>0<br>1<br>0<br>1</td>
-                                <td>0<br>1<br>1<br>1</td>                                
-                                <td><bar>A</bar> + B + C
-                                    <br>A<bar>B</bar>C
-                                    <br>AB<bar>C</bar>
-                                    <br>ABC
-                                </td>
-                                <td>Max term<br>Min term<br>Min term<br>Min term</td>
-                            </tr>
-                        </tbody>
-                    </table>   
+                    <div class="panel panel-default">
+                        <div class="center-block fix-width scroll-inner">
+                            <table class="table table-striped" style="margin: 0;  padding:0;">
+                                <thead>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>B</td>
+                                        <td>C</td>
+                                        <td>Solution</td>
+                                        <td>term</td>
+                                        <td>Min max</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0<br>0<br>0<br>0</td>
+                                        <td>0<br>0<br>1<br>1</td>
+                                        <td>0<br>1<br>0<br>1</td>
+                                        <td>0<br>0<br>0<br>1</td>
+                                        <td>A + B + C<br>A + B + <bar>C</bar><br>
+                                        A + <bar>B</bar> + C<br><bar>A</bar>BC</td>
+                                        <td>Max term<br>Max term<br>Max term<br>Min term</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1<br>1<br>1<br>1</td>
+                                        <td>0<br>0<br>1<br>1</td>
+                                        <td>0<br>1<br>0<br>1</td>
+                                        <td>0<br>1<br>1<br>1</td>                                
+                                        <td><bar>A</bar> + B + C
+                                            <br>A<bar>B</bar>C
+                                            <br>AB<bar>C</bar>
+                                            <br>ABC
+                                        </td>
+                                        <td>Max term<br>Min term<br>Min term<br>Min term</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            </div>
+                        </div>  
                 </div>
 
                 <hr class="bigLine">
@@ -1233,57 +1246,61 @@
                     </div>
                 </div>
                 <div class="part center-part">  
-                    <table>
-                        <head>
-                            <tr>
-                                <td>Démonstration</td>
-                                <td>les etapes</td>
-                                <td>الخطوات</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>s = a.b.c + a.b.<span class="high-line">(<bar>a</bar>.<bar>c</bar>)</span></td>
-                                <td>transformation</td>
-                                <td>تحويل</td>
-                            </tr>
-                        </head>
-                        <tbody>
-                            <tr>
-                                <td>s = a.b.c + a.<bar>b</bar>.(a + c)</td>
-                                <td>Appliquer le théorème de De Morgan<br><span class="high-line">(<bar>a</bar>.<bar>c</bar>)</span> = (<double-bar>a</double-bar>+<double-bar>c</double-bar> = (a + c)</td>
-            
-                                <td>تطبيق مبرهنة ديمورغن</td>
-                            </tr>
-                            <tr>
-                            </tr>
-                            <tr>
-                                <td>s = a.b.c + a.<bar>b</bar>.a + a.<bar>b</bar>.c</td>
-                                <td>Développement</td>
-                                <td>نشر</td>
-                            </tr>
-                            <tr>
-                                <td>s = a.b.c + a.<bar>b</bar> + a.<bar>b</bar>.c</td>
-                                <td>réduction (a.<bar>b</bar>.a = a.<bar>b</bar>) </td>
-                                <td>اختزال</td>
-                            </tr>
-                            <tr>
-                                <td>s = a.<bar>b</bar> + a.b.c + a.<bar>b</bar>.c
-                                    <br>s = a.<bar>b</bar> + a.c(b + <bar>b</bar>)
-                                </td>
-                                <td>variables communes</td>
-                                <td>العوامل المشتركة</td>
-                            </tr>
-                            <tr>
-                                <td>s = a.<bar>b</bar> + a.c</td>
-                                <td>car b + <bar>b</bar> = 1</td>
-                            </tr>
-                            <tr>
-                                <td>s = a(<bar>b</bar> + c)</td>
-                                <td>variables communes</td>
-                                <td>العوامل المشتركة</td>
-                            </tr>
-                        </tbody>
-                    </table>   
+                    <div class="panel panel-default">
+                        <div class="center-block fix-width scroll-inner">
+                            <table class="table table-striped" style="margin: 0;  padding:0;">
+                                <head>
+                                    <tr>
+                                        <td>Démonstration</td>
+                                        <td>les etapes</td>
+                                        <td>الخطوات</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>s = a.b.c + a.b.<span class="high-line">(<bar>a</bar>.<bar>c</bar>)</span></td>
+                                        <td>transformation</td>
+                                        <td>تحويل</td>
+                                    </tr>
+                                </head>
+                                <tbody>
+                                    <tr>
+                                        <td>s = a.b.c + a.<bar>b</bar>.(a + c)</td>
+                                        <td>Appliquer le théorème de De Morgan<br><span class="high-line">(<bar>a</bar>.<bar>c</bar>)</span> = (<double-bar>a</double-bar>+<double-bar>c</double-bar> = (a + c)</td>
+                    
+                                        <td>تطبيق مبرهنة ديمورغن</td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <td>s = a.b.c + a.<bar>b</bar>.a + a.<bar>b</bar>.c</td>
+                                        <td>Développement</td>
+                                        <td>نشر</td>
+                                    </tr>
+                                    <tr>
+                                        <td>s = a.b.c + a.<bar>b</bar> + a.<bar>b</bar>.c</td>
+                                        <td>réduction (a.<bar>b</bar>.a = a.<bar>b</bar>) </td>
+                                        <td>اختزال</td>
+                                    </tr>
+                                    <tr>
+                                        <td>s = a.<bar>b</bar> + a.b.c + a.<bar>b</bar>.c
+                                            <br>s = a.<bar>b</bar> + a.c(b + <bar>b</bar>)
+                                        </td>
+                                        <td>variables communes</td>
+                                        <td>العوامل المشتركة</td>
+                                    </tr>
+                                    <tr>
+                                        <td>s = a.<bar>b</bar> + a.c</td>
+                                        <td>car b + <bar>b</bar> = 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>s = a(<bar>b</bar> + c)</td>
+                                        <td>variables communes</td>
+                                        <td>العوامل المشتركة</td>
+                                    </tr>
+                                </tbody>
+                            </table>   
+                        </div>
+                    </div>    
                 </div>
             
                 <hr class="midLine">
