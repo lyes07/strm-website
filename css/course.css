@@ -208,8 +208,18 @@ td{
 
 
 .button{
-    padding: 5px 12px;
-    margin-left: 30%;
+    color: white;
+    font-size: 18px;
+    padding: 8px 18px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: color background-color .3s;
+} 
+.button:hover{
+    cursor: pointer;
+    color: #080c26;
+    background-color: white;
 }
 td>button{
     background: none;
@@ -260,6 +270,20 @@ double-bar {
 .try-button:hover{
     cursor: pointer;
     background-color: rgb(180, 77, 157);
+}
+
+.feedback{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.modal-buttons{
+    padding: 10px;
+    margin: 1% 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .small-img{
@@ -355,6 +379,10 @@ body {
 
     .modal-part{
         flex-direction: column;
+    }
+
+    .modal-buttons{
+        margin: 1% 15%;
     }
     
 }
