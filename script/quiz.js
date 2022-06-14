@@ -25,3 +25,8 @@ function showmenu(){
     navLinks.style.display="";
     setTimeout(()=>{navLinks.style.right = "0";},5); 
 }
+
+function start(){
+    const prompet = document.querySelector(".text-box");
+    prompet.style.display="none";
+}
