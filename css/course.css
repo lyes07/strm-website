@@ -169,24 +169,24 @@ td{
     background-color: #0c1133;
     color: white;
 }
-.modal table, 
-.modal th,
-.modal td {
+.question table, 
+.question th,
+.question td {
     color: white;
     border: 2px solid white;
     border-collapse: collapse ;
 } 
-.modal table{
+.question table{
     margin: auto;
 }
-.modal-part{
+.question-part{
     color: white;
     padding: 2% 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.modal::backdrop{
+.question::backdrop{
     background: rgb(0 0 0 / .75);
 }
 
