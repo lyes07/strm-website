@@ -5,77 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../image/favicon.png" type="image/png">
-    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="stylesheet" href="../css/q.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../script/quiz.js" defer="defer"></script>
+    <script src="../script/q.js" defer="defer"></script>
     <title>Quiz</title>
 </head>
 <body>
-    <div class="part text-box">
-        <div class="question">
-            <h4>résoudre l'équation logique A+B<bar>C</bar></h4>
-            <h4 class="ar" dir="rtl">حل المعادلة المنطقية A+B<bar>C</bar></h4>
+   <!--  <div class="home-box custom-box hide">
+        <h3>Instruction:</h3>
+        <p>Total number of q: <span class="total-question">5</span></p>
+        <button type="button" class="btn">Start</button>
+    </div> -->
+
+    <div class="quiz-box custom-box">
+        <div class="question-number">
         </div>
-        <table>
-            <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-                <td>A+B<bar>C</bar></td>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td><button class="qr" id="q1r1">0</button></td>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td><button class="qr" id="q1r2">0</button></td>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td><button class="qr" id="q1r3">0</button></td>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td><button class="qr" id="q1r4">0</button></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td><button class="qr" id="q1r5">0</button></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td><button class="qr" id="q1r6">0</button></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td><button class="qr" id="q1r7">0</button></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td><button class="qr" id="q1r8">0</button></td>
-            </tr>
-        </table>
-        <div class="feedback"></div>
+        <div class="question-text">
+        </div>
+        <div class="option-container">
+            <div class="option" onclick="check(this)"></div>
+            <div class="option" onclick="check(this)"></div>
+            <div class="option" onclick="check(this)"></div>
+            <div class="option" onclick="check(this)"></div>
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
     </div>
 </body>
 </html>
