@@ -84,11 +84,11 @@ body{
 }
 
 .quiz-box .option-container .option{
-    background-color: #f51aa4;
+    background-color: #8d3d6f;
     font-size: 18;
     line-height: 22px;
     padding: 15px;
-    border-bottom: 1px solid #f51aa4;
+    border-bottom: 1px solid #8d3d6f;
     margin-bottom: 10px;
     border-radius: 5px;
     cursor: pointer;

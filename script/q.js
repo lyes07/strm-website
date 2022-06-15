@@ -1,16 +1,31 @@
 const q = [
-    ["what is b in (34)<sub>b</sub> = (13)<sub>5</sub> ?",
-    ["6", "3", "10", "5"],
-    "6"],
-    ["the convert of (56)<sub>10</sub> in base 2 is ?",
-    ["1110001", "100011", "10111", "10110"],
-    "10111"],
+    ["what is b in (234)<sub>b</sub> = (126)<sub>5</sub> ?",
+    ["6", "7", "10", "5"],
+    "7"],
+
+    ["Convert (811)<sub>10</sub> in base 8 is ?",
+    ["1450", "1454", "1453", "1455"],
+    "1453"],
     
-    [],
-    [],
-    [],
-    [],
-    []
+    ["Chose the correct answer a.b + <bar>a</bar>.c + b.c=",
+    ["a.(b+c)", "a.b + <bar>a</bar>.c", "a.c + -a.b", "c(<bar>a</bar>+b)+a.b"],
+    "a.b + <bar>a</bar>.c"],
+
+    ["Convert (2019)<sub>10</sub> in base 2 is ?",
+    ["011 1101 1111", "111 1001 0111", "111 1110 0011", "011 1010 1001"],
+    "111 1110 0011"],
+    
+    ["What is the maximum number that can be represented on 20 bits:",
+    ["1 048 575", "1 044 567", "256 256", "1 064 256"],
+    "1 048 575"],
+
+    ["What is the result of this operation: F2C + 4C3=",
+    ["1 2 10 13", "2 0 D A", "A 2 D F", "1 3 D F"],
+    "1 3 D F"],
+
+    ["What is the result of this operation: 100101 + 101=",
+    ["101010", "110110", "101110", "101000"],
+    "101010"]
 ]
 let i = 1
 let score = 0
@@ -48,15 +63,15 @@ function next(){
 function check(e){
     if(trys[i-1] == false){
         if(e.innerHTML == q[i-1][2]){
-            e.style.backgroundColor = "green";
+            e.style.backgroundColor = "#00c52e";
             trys[i-1] = true
             score +=1
         }
         else{
-            e.style.backgroundColor = "red";
+            e.style.backgroundColor = "#f0273b";
             for(let j=0; j<4; j++){
                 if(options[j].innerHTML == q[i-1][2]){
-                    options[j].style.backgroundColor = "green";
+                    options[j].style.backgroundColor = "#00c52e";
                     trys[i-1] = true
                 }
             }
@@ -69,6 +84,6 @@ function check(e){
 
 function reset(){
     for(let j=0; j<4; j++){
-        options[j].style.backgroundColor = "#f51aa4";
+        options[j].style.backgroundColor = "#8d3d6f";
     }
 }
