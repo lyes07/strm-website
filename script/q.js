@@ -33,6 +33,9 @@ const numberOfQuestions = q.length
 const questionIndex = document.querySelector(".question-number")
 const question = document.querySelector(".question-text")
 const options = document.querySelectorAll(".option")
+const quiz = document.querySelector(".quiz-box")
+
+
 let trys = []
 for(let j=0; j<numberOfQuestions; j++){
     trys[j] = false
@@ -56,7 +59,7 @@ function next(){
         start()
     }
     else{
-
+        displayScore()
     }
 }
 
@@ -86,4 +89,9 @@ function reset(){
     for(let j=0; j<4; j++){
         options[j].style.backgroundColor = "#8d3d6f";
     }
+}
+
+function displayScore(){
+    quiz.innerHTML = "<h1 style='margin:40px auto;text-align: center;'>Your Score is : "+score+" / "+numberOfQuestions+"</h1>"
+
 }

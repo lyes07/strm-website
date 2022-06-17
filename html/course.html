@@ -21,17 +21,25 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="#">Cours</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="test.html">Test</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+                <!-- <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#">Course</a></li>
                     <li><a href="quiz.html">Quiz</a></li>
                     <li><a href="test.html">Test</a></li>
                     <li><a href="#footer">About</a></li>
-                </ul>
+                </ul> -->
             </div>
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
         <div class="course-nav">
-            <h1>Course</h1>
+            <h1>Cours</h1>
+            <!-- <h1>Course</h1> -->
             <div class="chapters-nav">
                 <div class="chapter-parts">
                     <h3 id="cc1">Introduction à l'informatique</h3>
@@ -70,6 +78,8 @@
     </header>
 
     <main id="main">
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <button onclick="topFunction()" id="myBtn"><img src="..\image\up.png" alt="UP" class="up-btn"></button>
         <div class="container-course">
 
                 <!-- chapter 1 -->
@@ -859,7 +869,7 @@
                         </tbody>
                     </table>
                 </div>
-                <button class="button try-button open-button1">Try</button>
+                <button class="button try-button open-button1">Essayer</button>
                 <dialog  class="modal" id="question1">
                     <div class="modal-part">
                         <h4>résoudre l'équation logique A et B.</h4>
@@ -945,7 +955,7 @@
                         </tbody>
                     </table>
                 </div>
-                <button class="button try-button open-button2">Try</button>
+                <button class="button try-button open-button2">Essayer</button>
                 <dialog  class="modal" id="question2">
                     <div class="modal-part">
                         <h4>résoudre l'équation logique A ou B.</h4>
@@ -1018,7 +1028,7 @@
                         </tbody>
                     </table>
                 </div>
-                <button class="button try-button open-button3">Try</button>
+                <button class="button try-button open-button3">Essayer</button>
                 <dialog  class="modal" id="question3">
                     <div class="modal-part">
                         <h4>résoudre l'équation logique <bar>A</bar></h4>
@@ -1147,7 +1157,7 @@
                 <div class="part center-part">
                     <p><bar>(a+b)</bar>=<bar>a </bar>.<bar> b</bar></p>
                 </div>
-                <button class="button try-button open-button3">Try</button>
+                <button class="button try-button open-button3">Essayer</button>
                 <dialog  class="modal" id="question3">
                     <h2></h2>
                     
@@ -1382,9 +1392,13 @@
                 <div style="height: 100px;"></div>
                 <hr class="bigLine">
                 <section class="footer" id="footer">
+                    <h2>À propos de</h2>
+                    <p>Ce site web a été développé par <a href="https://github.com/lyes07" target="_blank" class="gitLink"><b>Grine Lyes</b></a> en tant que projet final à l'université.</p>
+                </section>
+                <!-- <section class="footer" id="footer">
                     <h2>About Us</h2>
                     <p>This website was developed by <a href="https://github.com/lyes07" target="_blank" class="gitLink"><b>Grine Lyes</b></a> as a final project in the University</p>
-                </section>
+                </section> -->
             </div>
         </div>
     </main>
