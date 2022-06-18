@@ -147,6 +147,10 @@ nav .fa{
    display: none;
 }
 
+.btn-list{
+    width: 50%;
+}
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 28px;
@@ -154,6 +158,9 @@ nav .fa{
     }
     .nav-links ul li{
         display: block;
+    }
+    .btn-list{
+        width: 80%;
     }
 
     .btn{

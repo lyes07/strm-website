@@ -1,48 +1,57 @@
-const q = [
-    ["what is b in (234)<sub>b</sub> = (126)<sub>5</sub> ?",
-    ["6", "7", "10", "5"],
-    "7"],
-
-    ["Convert (811)<sub>10</sub> in base 8 is ?",
-    ["1450", "1454", "1453", "1455"],
-    "1453"],
-    
-    ["Chose the correct answer a.b + <bar>a</bar>.c + b.c=",
-    ["a.(b+c)", "a.b + <bar>a</bar>.c", "a.c + -a.b", "c(<bar>a</bar>+b)+a.b"],
-    "a.b + <bar>a</bar>.c"],
-
-    ["Convert (2019)<sub>10</sub> in base 2 is ?",
-    ["011 1101 1111", "111 1001 0111", "111 1110 0011", "011 1010 1001"],
-    "111 1110 0011"],
-    
-    ["What is the maximum number that can be represented on 20 bits:",
-    ["1 048 575", "1 044 567", "256 256", "1 064 256"],
-    "1 048 575"],
-
-    ["What is the result of this operation: F2C + 4C3=",
-    ["1 2 10 13", "2 0 D A", "A 2 D F", "1 3 D F"],
-    "1 3 D F"],
-
-    ["What is the result of this operation: 100101 + 101=",
-    ["101010", "110110", "101110", "101000"],
-    "101010"]
-]
+var qJason = returnQuestions()
+function init(){
+    if(qJason){
+        numberOfQuestions = qJason.length
+        for(let j=0; j<numberOfQuestions; j++){
+            trys[j] = false
+        }
+        for(let j=0; j<numberOfQuestions; j++){
+            q[j][0] = qJason[i].qst_text
+            q[j][1] = qJason[i].opt.split(",")
+            q[j][2] = qJason[i].answer
+        }
+        start() 
+    }
+}
+var q
 let i = 1
 let score = 0
-const numberOfQuestions = q.length
+var numberOfQuestions
 const questionIndex = document.querySelector(".question-number")
 const question = document.querySelector(".question-text")
 const options = document.querySelectorAll(".option")
 const quiz = document.querySelector(".quiz-box")
-
-
 let trys = []
-for(let j=0; j<numberOfQuestions; j++){
-    trys[j] = false
+
+/* 
+document.onload = ()=>{
+    if(chapter){
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST","../backend/q.php",true);
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhr.send('chapter='+chapter);
+        xhr.onload = function(){
+            if(this.status == 200){
+                q = JSON.parse(this.responseText);
+                console.log(q)
+                numberOfQuestions = q.length
+                for(let j=0; j<numberOfQuestions; j++){
+                    trys[j] = false
+                }
+            }
+            else{
+                console.log("status not right")
+            }
+        }
+    }
+    else{
+        console.log("chapter number not defined")
+    }
 }
+console.log(q) */
 
+init()
 
-start()
 
 function start(){
     questionIndex.innerHTML = "Question "+i+" of "+numberOfQuestions;
@@ -95,3 +104,5 @@ function displayScore(){
     quiz.innerHTML = "<h1 style='margin:40px auto;text-align: center;'>Your Score is : "+score+" / "+numberOfQuestions+"</h1>"
 
 }
+
+
