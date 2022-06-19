@@ -107,6 +107,12 @@ a:link, a:visited{
     margin: auto;
     width: 90%;
 }
+.supPart ul{
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 84%;
+}
 .fr, .ar{
     width: 48%;
 }

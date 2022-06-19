@@ -5,17 +5,18 @@ if(isset($_POST["chapter"])){
     $data = array();
     $input =$_POST["chapter"];
     if($input == "0"){
-        $query="SELECT * FROM questions WHERE qst_type='multichoice';";
+        $query="SELECT qst_text,opt,answer FROM questions WHERE qst_type='multichoice';";
     }
     if($input == "1"){
-        $query="SELECT * FROM questions WHERE qst_type='multichoice' AND chapter = '1';";
+        $query="SELECT qst_text,opt,answer FROM questions WHERE qst_type='multichoice' AND chapter = '1';";
     }
     if($input == "2"){
-        $query="SELECT * FROM questions WHERE qst_type='multichoice' AND chapter = '2';";
+        $query="SELECT qst_text,opt,answer  FROM questions WHERE qst_type='multichoice' AND chapter = '2';";
     }
     if($input == "3"){
-        $query="SELECT * FROM questions WHERE qst_type='multichoice' AND chapter = '3';";
+        $query="SELECT qst_text,opt,answer  FROM questions WHERE qst_type='multichoice' AND chapter = '3';";
     }
+
 
     $result = $conn->query($query);
 
