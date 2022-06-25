@@ -24,33 +24,6 @@ body{
     border-radius: 10px;
 }
 
-.custom-box.hide{
-    display: none;
-}
-
-
-.home-box h3{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    line-height: 25px;
-}
-
-.home-box p{
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 22px;
-    font-weight: 400;
-}
-
-.home-box p span{
-    font-weight: 500;
-}
-
-.home-box .btn{
-    margin-top: 20px;
-}
-
 .btn{
     color: white;
     padding: 15px 45px;
@@ -64,16 +37,8 @@ body{
 bar{
     text-decoration:overline;
 }
-.quiz-box .question-number{
-    font-size: 20;
-    color: aqua;
-    font-weight: 600;
-    border-bottom: 2px solid #f51aa4;
-    padding-bottom: 10px;
-    list-style: 25px;
-}
 
-.quiz-box .question-text{
+.qst{
     font-size: 24;
     line-height: 28px;
     font-weight: 400;
@@ -81,19 +46,9 @@ bar{
     margin: 0;
 }
 
-/* .quiz-box .option-container{
-    
-} */
 
-.quiz-box .option-container .option{
-    background-color: #8d3d6f;
-    font-size: 18;
-    line-height: 22px;
-    padding: 15px;
-    border-bottom: 1px solid #8d3d6f;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+.question-container{
+
 }
 
 .btn{
@@ -106,9 +61,14 @@ bar{
     background: transparent;
     position: relative;
     cursor: pointer;
-    margin-bottom: 14px;
+    margin:auto 0 auto 14px;
     border-radius: 12px;
     font-weight: 400;
+    text-align: center;
+}
+.next-question-btn{
+    text-align: center;
+    margin:auto 10px;
 }
 .btn:hover{
     border: 1px solid rgb(183, 38, 154);
@@ -116,20 +76,20 @@ bar{
     transition: .5s;
 }
 
-.btn-list{
+
+
+.line{
+    border: 2px solid #f51aa4;
+    color: #f51aa4;
+    width: 92%;
+    margin:4% 2%;
+}
+
+.input{
+    font-size: 24px;
     width: 50%;
+    height: 40px;
 }
-
-.center{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hide{
-    visibility: hidden;
-}
-
 
 @media(max-width: 700px){
     h1{
@@ -142,3 +102,4 @@ bar{
         width: 90%;
     }
 }
+

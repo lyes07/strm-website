@@ -11,27 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../script/q.js" defer="defer"></script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <title>Quiz</title>
 </head>
 <body>
-   <!--  <div class="home-box custom-box hide">
-        <h3>Instruction:</h3>
-        <p>Total number of q: <span class="total-question">5</span></p>
-        <button type="button" class="btn">Start</button>
-    </div> -->
-
     <div class="quiz-box custom-box">
-        <div class="question-number">
+        <div class="center">
+            <h1 style="margin-bottom: 20px;">Choisissez le chapitre sur lequel vous voulez que le quiz soit</h1>
+            <div class="btn btn-list" onclick="source('1')">Introduction à l'informatique</div><br>
+            <div class="btn btn-list" onclick="source('2')">Codage et représentation de l'information</div><br>
+            <div class="btn btn-list" onclick="source('3')">Algèbre de Boole</div><br>
+            <div class="btn btn-list" onclick="source('0')">Toute les chapitres</div>
         </div>
-        <div class="question-text">
+        <div class="question-number hide">
         </div>
-        <div class="option-container">
+        <div class="question-text hide">
+        </div>
+        <div class="option-container hide">
             <div class="option" onclick="check(this)"></div>
             <div class="option" onclick="check(this)"></div>
             <div class="option" onclick="check(this)"></div>
             <div class="option" onclick="check(this)"></div>
         </div>
-        <div class="next-question-btn">
+        <div class="next-question-btn hide">
             <button type="button" class="btn" onclick="next()">Next</button>
         </div>
     </div>
