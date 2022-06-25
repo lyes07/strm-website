@@ -1,7 +1,8 @@
 <?php
 
 if(isset($_POST["chapter"])){
-    $conn = mysqli_connect("localhost","root","","strm");
+    /* $conn = mysqli_connect("localhost","root","","strm"); */
+    $conn = new PDO("mysql:host=localhost;dbname=strm", "root", "");
     $data = array();
     $input =$_POST["chapter"];
     if($input == "0"){

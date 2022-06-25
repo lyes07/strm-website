@@ -1,3 +1,12 @@
+/* ::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(57, 13, 88);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(22, 2, 35);
+} */
 *{
     margin: 0;
     padding: 0;
@@ -136,10 +145,12 @@ b{
     margin-bottom: 14px;
     border-radius: 12px;
     font-weight: 400;
+    /* transform: background-color letter-spacing; */
 }
 .btn:hover{
     border: 1px solid rgb(183, 38, 154);
-    background: rgb(183, 38, 154);
+    background-color: rgb(183, 38, 154);
+    /* \ */
     transition: .5s;
 }
 
@@ -269,7 +280,8 @@ h3{
 }
 
 .course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(244, 239, 239, 0.4);
+    cursor: pointer;
+    box-shadow: 0 0 30px 0px rgba(244, 239, 239, 0.4);
 }
 
 .qt{
