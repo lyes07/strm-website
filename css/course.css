@@ -62,7 +62,10 @@ p{
     color: rgb(156, 38, 130);
     text-decoration: none;
 }
-
+.new-chapter{
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+}
 a:link, a:visited{
     font-size: 17px;
     color: white;
@@ -102,12 +105,26 @@ a:link, a:visited{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    line-height: 1.5;
 }
 .supPart{
     margin: auto;
     width: 90%;
+    line-height: 1.5;
 }
 .supPart ul{
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 84%;
+}
+#c3p5 ul{
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 84%;
+}
+#c3p6 ol{
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -163,6 +180,10 @@ td{
 
 .course-img{
     width: 40%;
+}
+
+.ar ul li{
+    line-height: 1.5;
 }
 
 .modal{
