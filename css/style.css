@@ -231,6 +231,19 @@ nav .fa{
     .nav-links ul li:hover::after{
         width: 100%;
     }
+    .nav-links ul li::after{
+        content: "";
+        width: 0%;
+        height: 0;
+        background:none;
+        display: block;
+        margin: auto;
+        transition: 0s;
+    }
+    
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
 }
 
 main{
@@ -342,27 +355,18 @@ hr{
     margin-right: 10%;
 }
 
-/* #footer{
+#footer{
     width: 100%;
     text-align: center;
     color: white;
     padding: 30px 0;
-} */
-
-.footer{
-   position: relative;
-   width: 80%;
-   margin: 0 10%;
-   height: auto;
-   color: white;
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-} 
-
-.fcontainer{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   flex-direction: row;
 }
+
+/* .footer{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 100vh;
+    flex-direction: column;
+} */
